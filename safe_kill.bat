@@ -1,0 +1,1 @@
+﻿python D:/kbengine/kbe/tools/server/pycluster/cluster_controller.py shutdown

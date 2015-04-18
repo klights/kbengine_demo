@@ -1,0 +1,44 @@
+﻿<root>
+	<Properties>
+		<avatarInfos>
+			<Type>			AVATAR_INFOS		</Type>
+			<Flags>			Base			</Flags>
+			<Default>		0			</Default>
+			<Persistent>		true			</Persistent>
+		</avatarInfos>
+	</Properties>
+
+	<BaseMethods>
+		<requestAvatarList>
+			<Exposed/>
+		</requestAvatarList>
+
+		<requestCreateAvatar>
+			<Exposed/>
+			<Arg>			UNICODE			</Arg>		<!-- name -->
+		</requestCreateAvatar>
+
+		<selectAvatarEnterGame>
+			<Exposed/>
+			<Arg>			DBID			</Arg>		<!-- avatarDBID -->
+		</selectAvatarEnterGame>
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+
+	<ClientMethods>
+		<responseAvatarList>
+			<Arg>			AVATAR_INFOS		</Arg>		<!-- avatarInfos -->
+		</responseAvatarList>
+
+		<responseCreateAvatar>
+			<Arg>			AVATAR_INFO		</Arg>		<!-- avatarInfo -->
+		</responseCreateAvatar>
+
+		<responseCreateAvatarFailed>
+			<Arg>			ERRCODE			</Arg>		<!-- errCode -->
+		</responseCreateAvatarFailed>
+	</ClientMethods>
+
+</root>

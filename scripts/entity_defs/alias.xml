@@ -1,0 +1,27 @@
+﻿<root>
+	<BOOL>				UINT8				</BOOL>
+	<DBID>				UINT64				</DBID>
+	<ENTITYID>			INT32				</ENTITYID>
+	<ERRCODE>			INT8				</ERRCODE>
+	
+	<AVATAR_INFO>	FIXED_DICT
+		<Properties>
+			<dbid>
+				<Type>					DBID						</Type>
+			</dbid>
+			<name>
+				<Type>					UNICODE						</Type>
+			</name>
+		</Properties>
+	</AVATAR_INFO>
+	
+	<AVATAR_INFOS>	FIXED_DICT
+		<implementedBy>	AVATAR_INFOS.inst	</implementedBy>
+		<Properties>
+			<values>
+				<Type>	ARRAY	<of>	AVATAR_INFO		</of>		</Type>
+			</values>
+		</Properties>
+	</AVATAR_INFOS>
+	
+</root>

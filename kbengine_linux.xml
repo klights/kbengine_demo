@@ -1,0 +1,73 @@
+﻿<root>
+	<channelCommon> 
+		<timeout> 
+			<internal> 60.0 </internal>
+			<external> 60.0 </external>
+		</timeout>
+		<encrypt_type> 1 </encrypt_type>
+	</channelCommon> 
+	
+	<shutdown_time> 60.0 </shutdown_time>
+	
+	<trace_packet>
+		<debug_type>0</debug_type>
+	</trace_packet>
+	
+	<app_publish>0</app_publish>
+	
+	<dbmgr>
+		<debug> false </debug>
+		<host> localhost </host>
+		<databaseName> dbg2_map </databaseName>
+		<numConnections> 5 </numConnections>
+	</dbmgr>
+	
+	<cellapp>
+	</cellapp>
+	
+	<baseapp>
+		<backupPeriod> 500 </backupPeriod>
+		
+		<externalPorts_min> 20034 </externalPorts_min>
+		<externalPorts_max> 20042 </externalPorts_max>
+		
+		<archivePeriod> 1800 </archivePeriod>
+		<backupPeriod> 1800 </backupPeriod>
+	</baseapp>
+	
+	<cellappmgr>
+	</cellappmgr>
+	
+	<baseappmgr>
+	</baseappmgr>
+	
+	<loginapp>
+		<externalPorts_min> 20033 </externalPorts_min>
+		<externalPorts_max> 0 </externalPorts_max>
+	</loginapp>	
+	
+	<machine>
+	</machine>
+	
+	<interfaces>
+		<chargeType> thirdparty </chargeType>
+		<orders_timeout> 3600 	</orders_timeout>
+		<thirdpartyService_cbport> 8008 </thirdpartyService_cbport>
+	</interfaces>
+	
+	<bots>
+		<host> localhost </host>
+		<port> 20033 </port>
+		
+		<defaultAddBots> 
+			<totalcount> 512 </totalcount>
+			<ticktime> 0.1 </ticktime>
+			<tickcount> 64 </tickcount>
+		</defaultAddBots>
+		
+		<account_infos>
+			<account_name_prefix>		bot_	</account_name_prefix>
+			<account_name_suffix_inc>	1		</account_name_suffix_inc>
+		</account_infos>
+	</bots>
+</root>

@@ -1,0 +1,4 @@
+﻿<root>
+	<Account hasBase="true" hasCell="false" hasClient="true"></Account>
+	<Avatar hasBase="true" hasCell="true" hasClient="true"></Avatar>
+</root>
